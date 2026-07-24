@@ -1,0 +1,17 @@
+{
+  "name": "@le-conseil/game-engine",
+  "version": "0.1.0",
+  "description": "Moteur de regles du jeu Le Conseil, independant de tout frontend ou framework serveur.",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "tsc -p . && node --test \"dist/__tests__/*.test.js\"",
+    "demo": "tsc -p . && node dist/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^5.5.4"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@le-conseil/server",
+  "version": "0.1.0",
+  "description": "Serveur temps reel du jeu Le Conseil (NestJS + Socket.io). Le moteur de regles reste seul autoritaire ; ce serveur ne fait que transporter, valider et filtrer.",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node dist/main.js",
+    "dev": "tsc -p . && node dist/main.js",
+    "test:integration": "tsc -p . && node --test \"dist/__tests__/*.test.js\""
+  },
+  "dependencies": {
+    "@le-conseil/game-engine": "file:../game-engine",
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/core": "^11.1.6",
+    "@nestjs/platform-express": "^11.1.6",
+    "@nestjs/platform-socket.io": "^11.1.6",
+    "@nestjs/websockets": "^11.1.6",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "socket.io-client": "^4.8.1",
+    "typescript": "^5.5.4"
+  }
+}

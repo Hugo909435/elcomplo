@@ -1,0 +1,19 @@
+{
+  "name": "le-conseil",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Le Conseil — jeu web multijoueur de succession royale (bluff, négociation, trahison).",
+  "scripts": {
+    "install:all": "npm --prefix game-engine install && npm --prefix server install && npm --prefix frontend install",
+    "build": "npm run build:engine && npm run build:server && npm run build:frontend",
+    "build:engine": "npm --prefix game-engine run build",
+    "build:server": "npm --prefix server run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "test": "npm run test:engine && npm run test:server",
+    "test:engine": "npm --prefix game-engine test",
+    "test:server": "npm --prefix server run test:integration",
+    "start:server": "npm --prefix server start",
+    "dev:server": "npm --prefix server run dev",
+    "dev:frontend": "npm --prefix frontend run dev"
+  }
+}
