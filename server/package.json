@@ -13,7 +13,7 @@
     "@le-conseil/game-engine": "file:../game-engine",
     "@nestjs/common": "^11.1.6",
     "@nestjs/core": "^11.1.6",
-    "@nestjs/platform-express": "^11.1.6",
+    "@nestjs/platform-express": "^11.2.6",
     "@nestjs/platform-socket.io": "^11.1.6",
     "@nestjs/websockets": "^11.1.6",
     "reflect-metadata": "^0.2.2",
